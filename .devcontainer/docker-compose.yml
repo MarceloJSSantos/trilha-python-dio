@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: trilha-python-dio
+    image: mcr.microsoft.com/devcontainers/python:3.14
+    volumes:
+      - ..:/workspace
+    command: sleep infinity
