@@ -10,3 +10,11 @@ print(type(valor_str))
 
 print(100 / 2)
 print(100 // 2)
+
+boleano = True
+print(boleano)
+
+texto_1 = "Python 1"
+texto_2 = 'Python 2'
+print(texto_1)
+print(texto_2)
