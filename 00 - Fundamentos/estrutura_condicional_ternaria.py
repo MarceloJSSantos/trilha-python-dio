@@ -1,4 +1,4 @@
-saldo = 2000
+saldo = 20000
 saque = 2500
 
 status = "Sucesso" if saldo >= saque else "Falha"

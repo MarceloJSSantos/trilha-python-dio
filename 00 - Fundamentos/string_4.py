@@ -1,14 +1,16 @@
 nome = "Guilherme"
+NR_CARACTERES = 100
 
-mensagem = f"""
+print(str(".").center(NR_CARACTERES,"."))
+mensagem = f'''
    Olá meu nome é {nome},
  Eu estou aprendendo Python.
      Essa mensagem tem diferentes recuos.
-"""
+'''
 
 print(mensagem)
 
-
+print(str(".").center(NR_CARACTERES,"."))
 print(
     """
     ============= MENU =============
@@ -19,6 +21,6 @@ print(
 
     ================================
 
-            Obrigado por usar nosso sistema!!!!
-"""
-)
+        Obrigado por usar nosso sistema!!!!
+    """
+    )

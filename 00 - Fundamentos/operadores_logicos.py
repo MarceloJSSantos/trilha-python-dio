@@ -13,14 +13,17 @@ saque = 250
 limite = 200
 conta_especial = True
 
-exp = saldo >= saque and saque <= limite or conta_especial and saldo >= saque
+saldo_suficiente = saldo >= saque
+saque_no_limite = saque <= limite
+
+exp = saldo_suficiente and saque_no_limite or conta_especial and saldo_suficiente
 print(exp)
 
-exp_2 = (saldo >= saque and saque <= limite) or (conta_especial and saldo >= saque)
+exp_2 = (saldo_suficiente and saque_no_limite) or (conta_especial and saldo_suficiente)
 print(exp_2)
 
-conta_normal_com_saldo_suficiente = saldo >= saque and saque <= limite
-conta_especial_com_saldo_suficiente = conta_especial and saldo >= saque
+conta_normal_com_saldo_suficiente = saldo_suficiente and saque_no_limite
+conta_especial_com_saldo_suficiente = conta_especial and saldo_suficiente
 
 exp_3 = conta_normal_com_saldo_suficiente or conta_especial_com_saldo_suficiente
 print(exp_3)
