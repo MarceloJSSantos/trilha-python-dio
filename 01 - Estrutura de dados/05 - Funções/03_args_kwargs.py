@@ -1,11 +1,14 @@
-def exibir_poema(data_extenso, *args, **kwargs):
-    texto = "\n".join(args)
-    meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in kwargs.items()])
+#lista_argumentos = *args (1 *)
+#dicionario_argumentos = **kwargs (2 **)
+def exibir_poema(data_extenso, *lista_argumentos, **dicionario_argumentos):
+    texto = "\n".join(lista_argumentos)
+    meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in dicionario_argumentos.items()])
     mensagem = f"{data_extenso}\n\n{texto}\n\n{meta_dados}"
     print(mensagem)
 
 
 exibir_poema(
+    "Sexta-feira, 21 de Junho de 2024",
     "Zen of Python",
     "Beautiful is better than ugly.",
     "Explicit is better than implicit.",
@@ -28,4 +31,5 @@ exibir_poema(
     "Namespaces are one honking great idea -- let's do more of those!",
     autor="Tim Peters",
     ano=1999,
+    assunto="Pensamentos sobre a linguagem Python",
 )
